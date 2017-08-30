@@ -49,6 +49,7 @@
 		AB6DB57C1F56AC37007180A3 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB56A1F56AC37007180A3 /* IQToolbar.swift */; };
 		AB6DB57D1F56AC37007180A3 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB56B1F56AC37007180A3 /* IQUIView+IQKeyboardToolbar.swift */; };
 		AB6DB57E1F56AC37007180A3 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB56D1F56AC37007180A3 /* IQKeyboardManager.bundle */; };
+		AB6DB5801F56ADE0007180A3 /* Jaipur.gpx in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB57F1F56ADE0007180A3 /* Jaipur.gpx */; };
 		AB8DCCDD1F5697E40086198D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8DCCDC1F5697E40086198D /* AppDelegate.swift */; };
 		AB8DCCE11F5697E50086198D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8DCCE01F5697E50086198D /* Reachability.swift */; };
 		AB8DCCE61F5697E50086198D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8DCCE51F5697E50086198D /* SwiftyJSON.swift */; };
@@ -141,6 +142,7 @@
 		AB6DB56A1F56AC37007180A3 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		AB6DB56B1F56AC37007180A3 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		AB6DB56D1F56AC37007180A3 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		AB6DB57F1F56ADE0007180A3 /* Jaipur.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Jaipur.gpx; sourceTree = "<group>"; };
 		AB8DCCD81F5697E40086198D /* AnnotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8DCCDC1F5697E40086198D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
 		AB8DCCE01F5697E50086198D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Vendors/Reachability/Reachability.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		AB8DCCDA1F5697E40086198D /* AnnotationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AB6DB57F1F56ADE0007180A3 /* Jaipur.gpx */,
 				AB8DCD301F5698D50086198D /* Public */,
 				AB8DCD071F5697E60086198D /* AnnotationDemo.xcdatamodeld */,
 				AB8DCD091F5697E60086198D /* Assets.xcassets */,
@@ -652,6 +655,7 @@
 			files = (
 				AB6DB5451F569F33007180A3 /* 37x-Checkmark@2x.png in Resources */,
 				AB6DB54A1F569F33007180A3 /* Icon@2x.png in Resources */,
+				AB6DB5801F56ADE0007180A3 /* Jaipur.gpx in Resources */,
 				AB8DCD081F5697E60086198D /* AnnotationDemo.xcdatamodeld in Resources */,
 				AB8DCCEF1F5697E50086198D /* NoInternetView.xib in Resources */,
 				AB6DB5481F569F33007180A3 /* Icon-Small@2x.png in Resources */,

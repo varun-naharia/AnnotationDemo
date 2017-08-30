@@ -54,6 +54,9 @@
                                     <constraint firstAttribute="width" constant="40" id="uBB-zl-4bU"/>
                                 </constraints>
                                 <state key="normal" image="getcurrentlocation"/>
+                                <connections>
+                                    <action selector="currentLocationAction:" destination="VjM-Ss-6El" eventType="touchUpInside" id="FLZ-Tv-abS"/>
+                                </connections>
                             </button>
                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GeT-bi-fnh">
                                 <rect key="frame" x="0.0" y="526" width="414" height="200"/>

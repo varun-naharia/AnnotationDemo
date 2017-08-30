@@ -70,6 +70,26 @@ class HomeViewController: UIViewController, MKMapViewDelegate, LocationManagerDe
         self.getAllAddedPlace()
     }
     
+    @IBAction func currentLocationAction(_ sender: UIButton) {
+        LocationManager.sharedInstance.getLocation { (location) in
+            self.mapView.setCenter(coordinate: location.coordinate, zoomLevel: 16, animated: true)
+            self.mapView.removeAllOverlay()
+            self.addRadiusCircle(location: location)
+            self.reloadMapData()
+            Utilities.getAddressFrom(location: location, completion: { (locationAddress) in
+                if(locationAddress != nil)
+                {
+                    //                    self.txtLocation.text = locationAddress
+                }
+                self.mapView.region = MKCoordinateRegionMakeWithDistance(
+                    location.coordinate,
+                    280,
+                    280
+                );
+            })
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = "Add a Place"
