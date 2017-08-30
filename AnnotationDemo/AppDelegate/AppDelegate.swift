@@ -12,11 +12,18 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var reachability:ReachabilityCheck = ReachabilityCheck.sharedInstance
+    static let shareDelegate = UIApplication.shared.delegate as! AppDelegate
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+        _ = LocationManager.sharedInstance
+        UINavigationBar.appearance().backIndicatorImage = #imageLiteral(resourceName: "back")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "back")
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -80.0), for: .default)
         return true
     }
 
