@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoInternetView" customModule="IOSBase" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xLL-pk-VgI" customClass="NoInternetView" customModule="IOSBase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTERNET CONNECTION ERROR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYH-9E-0Dc">
+                    <rect key="frame" x="16" y="200" width="343" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="SXR-vp-3Ci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="networkerror" translatesAutoresizingMaskIntoConstraints="NO" id="AGW-gW-DvL">
+                    <rect key="frame" x="67" y="235" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Aih-FF-Hnf"/>
+                        <constraint firstAttribute="width" constant="240" id="rmh-ih-5W8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your internet connectivity and try again" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5V-ze-Uaf">
+                    <rect key="frame" x="67" y="371" width="240" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="Te4-y2-TuZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWU-sf-Tmp">
+                    <rect key="frame" x="112" y="426" width="150" height="40"/>
+                    <color key="backgroundColor" red="0.9152866006" green="0.24655312300000001" blue="0.20107686520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ux0-11-JZR"/>
+                        <constraint firstAttribute="width" constant="150" id="zUc-bc-zwN"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Retry"/>
+                    <connections>
+                        <action selector="retryInternet:" destination="xLL-pk-VgI" eventType="touchUpInside" id="b6p-Sq-9DT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AGW-gW-DvL" firstAttribute="centerY" secondItem="xLL-pk-VgI" secondAttribute="centerY" constant="-34.5" id="47g-dS-PJu"/>
+                <constraint firstItem="A5V-ze-Uaf" firstAttribute="trailing" secondItem="AGW-gW-DvL" secondAttribute="trailing" id="5Tg-Qj-5cZ"/>
+                <constraint firstItem="A5V-ze-Uaf" firstAttribute="centerX" secondItem="AGW-gW-DvL" secondAttribute="centerX" id="5im-gN-vla"/>
+                <constraint firstItem="QYH-9E-0Dc" firstAttribute="leading" secondItem="xLL-pk-VgI" secondAttribute="leading" constant="16" id="6nv-sk-34Z"/>
+                <constraint firstItem="A5V-ze-Uaf" firstAttribute="top" secondItem="AGW-gW-DvL" secondAttribute="bottom" constant="8" id="770-fV-nLn"/>
+                <constraint firstAttribute="trailing" secondItem="QYH-9E-0Dc" secondAttribute="trailing" constant="16" id="JKM-Qf-z2S"/>
+                <constraint firstItem="AGW-gW-DvL" firstAttribute="top" secondItem="QYH-9E-0Dc" secondAttribute="bottom" constant="8" id="MAF-T6-OeX"/>
+                <constraint firstItem="AGW-gW-DvL" firstAttribute="centerX" secondItem="xLL-pk-VgI" secondAttribute="centerX" id="NOK-Ni-ISH"/>
+                <constraint firstItem="fWU-sf-Tmp" firstAttribute="top" secondItem="A5V-ze-Uaf" secondAttribute="bottom" constant="8" id="W50-Kh-2PH"/>
+                <constraint firstItem="A5V-ze-Uaf" firstAttribute="leading" secondItem="AGW-gW-DvL" secondAttribute="leading" id="afC-ZV-pU7"/>
+                <constraint firstItem="fWU-sf-Tmp" firstAttribute="centerX" secondItem="A5V-ze-Uaf" secondAttribute="centerX" id="nL8-Sl-v4S"/>
+            </constraints>
+            <point key="canvasLocation" x="-144.5" y="43.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="networkerror" width="256" height="149"/>
+    </resources>
+</document>
